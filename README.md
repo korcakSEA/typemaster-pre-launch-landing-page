@@ -35,7 +35,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: (https://github.com/korcakSEA/typemaster-pre-launch-landing-page.git)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: (https://korcaksea.github.io/typemaster-pre-launch-landing-page/)
 
 ## My process
 
