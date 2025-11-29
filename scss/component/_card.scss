@@ -1,0 +1,43 @@
+@use '../abstracts/' as *;
+
+.card {
+
+  --gap:#{map-get($spacing, $key: 400)};
+
+  @include respond-to(md) {
+    --gap: #{map-get($spacing, $key: 600)};
+  }
+  
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: px-to-rem(65);
+    height: px-to-rem(65);
+    padding: map-get($map: $spacing, $key: 250);
+    border-radius: map-get($map: $radius, $key: 16);
+    background-color: $primary;
+  }
+
+  &__text{
+    flex: 1;
+  }
+
+  &__title {
+    color: $secondary-shade;
+    @extend %text-preset-3;
+    text-transform: uppercase;
+    margin-bottom: map-get($map: $spacing, $key: 250);
+    width: 15ch;
+
+    @include respond-to(md) {
+      margin-bottom: map-get($spacing, $key: 300);
+
+    }
+  }
+
+  &__description {
+    color: $secondary;
+    @extend %text-preset-5;
+  }
+}

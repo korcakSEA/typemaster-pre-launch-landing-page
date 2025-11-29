@@ -1,0 +1,45 @@
+@use '../abstracts/' as *;
+
+.btn {
+  padding: map-get($spacing, 150) map-get($spacing, 200);
+
+  @include respond-to(md) {
+    padding: map-get($spacing, 200) map-get($spacing, 300);
+  }
+
+  border-radius: map-get($radius, 8);
+  text-transform: uppercase;
+  @extend %text-preset-6;
+  border: none;
+  transition: all 150ms ease-in;
+
+  &-primary {
+    background-color: $primary;
+    color: $white;
+
+    &:hover {
+      background-color: $primary-tint;
+    }
+
+    &:focus {
+      outline-offset: 2px;
+      outline: 2px solid $primary;
+    }
+  }
+
+  &-secondary {
+    background-color: $secondary-tint;
+    color: $secondary-shade;
+
+    &:hover {
+      background-color: $secondary-shade;
+      color: $white;
+    }
+
+    &:focus {
+      outline-offset: 2px;
+      outline: 2px solid $secondary-shade;
+    }
+  }
+
+}

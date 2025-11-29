@@ -12,106 +12,115 @@
 </head>
 
 <body>
-  <main class="container">
-    <!-- Navigation -->
-    <nav class="nav">
-      <img src="./assets/shared/logo.svg" alt="Typemaster logo" class="nav__logo">
-      <button type="submit" class="nav__cta">Pre-order now</button>
-    </nav>
-    <!-- Main Hero -->
-    <div class="hero">
-
-      <!-- Hero Top section -->
-      <section class="top">
-        <!-- Top Content -->
-        <div class="top__content">
-          <!-- Top Text -->
-          <div class="top__text">
-            <h1 class="top__title">Typemaster keyboard</h1>
-            <p class="top__description">
-              Improve your productivity and gaming without breaking the bank. Upgrade to a high quality
-              mechanical typing experience.
+  <div class="wrapper flex flex-col">
+    
+    <main class="container">
+      <!-- Navigation -->
+      <nav class="nav flex">
+        <img src="./assets/shared/logo.svg" alt="Typemaster logo" class="nav__logo">
+        <button type="submit" class="nav__cta btn btn-secondary">Pre-order now</button>
+      </nav>
+      <!-- Main Hero -->
+      <div class="hero">
+        <!-- Hero Top section -->
+        <section class="top flex">
+          <!-- Top Content -->
+          <div class="top__content">
+            <!-- Top Text -->
+            <div class="top__text">
+              <h1 class="top__title">Typemaster keyboard</h1>
+              <p class="top__description">
+                Improve your productivity and gaming without breaking the bank. Upgrade to a high quality
+                mechanical typing experience.
+              </p>
+            </div>
+            <!-- Top CTA -->
+            <div class="top__cta">
+              <button type="submit" class="btn btn-primary">Pre-order now</button>
+              <span>Release on 5/27</span>
+            </div>
+          </div>
+          <!-- Picture, will be in a div? -->
+          <picture>
+            <source media="(min-width:1024px)" srcset="./assets/desktop/image-keyboard.jpg">
+            <source media="(min-width:768px )" srcset="./assets/tablet/image-keyboard.jpg">
+            <img src="./assets/mobile/image-keyboard.jpg" alt="keyboard image">
+          </picture>
+        </section>
+        <!-- Hero Bottom section -->
+        <section class="bottom flex">
+          <!-- Bottom Image container -->
+          <div class="bottom__images flex">
+            <picture class="bottom__images-left">
+              <source media="(min-width:1024px)" srcset="./assets/desktop/image-phone-and-keyboard.jpg">
+              <source media="(min-width:768px )" srcset="./assets/tablet/image-phone-and-keyboard.jpg">
+              <img src="./assets/mobile/image-phone-and-keyboard.jpg" alt="phone and keyboard image">
+            </picture>
+            <picture class="bottom__images-right">
+              <source media="(min-width:1024px)" srcset="./assets/desktop/image-glass-and-keyboard.jpg">
+              <source media="(min-width:768px )" srcset="./assets/tablet/image-glass-and-keyboard.jpg">
+              <img src="./assets/mobile/image-glass-and-keyboard.jpg" alt="keyboard image">
+            </picture>
+          </div>
+          <!-- Bottom content -->
+          <div class="bottom__content">
+            <h2 class="bottom__title">Mechanical wireless keyboard</h2>
+            <p class="bottom__description">
+              The Typemaster keyboard boasts top-notch build and practical design. It offers a wide variety
+              of switches and keycaps, along with reliable wireless connectivity.
             </p>
           </div>
-          <!-- Top CTA -->
-          <div class="top__cta">
-            <button type="submit">Pre-order now</button>
-            <span>Release on 5/27</span>
-          </div>
-        </div>
-        <!-- Picture, will be in a div? -->
-        <picture>
-          <source media="(min-width:1024px)" srcset="./assets/desktop/image-keyboard.jpg">
-          <source media="(min-width:768px )" srcset="./assets/tablet/image-keyboard.jpg">
-          <img src="./assets/mobile/image-keyboard.jpg" alt="keyboard image">
-        </picture>
-      </section>
-
-      <!-- Hero Bottom section -->
-      <section class="bottom">       
-        <!-- Bottom Image container -->
-        <div class="bottom__images">
-          <picture class="bottom__images-left">
-            <source media="(min-width:1024px)" srcset="./assets/desktop/image-phone-and-keyboard.jpg">
-            <source media="(min-width:768px )" srcset="./assets/tablet/image-phone-and-keyboard.jpg">
-            <img src="./assets/mobile/image-phone-and-keyboard.jpg" alt="phone and keyboard image">
-          </picture>
-          <picture class="bottom__images-right">
-            <source media="(min-width:1024px)" srcset="./assets/desktop/image-glass-and-keyboard.jpg">
-            <source media="(min-width:768px )" srcset="./assets/tablet/image-glass-and-keyboard.jpg">
-            <img src="./assets/mobile/image-glass-and-keyboard.jpg" alt="keyboard image">
-          </picture>
-        </div>
-        <!-- Bottom content -->
-        <div class="bottom__content">
-          <h2 class="bottom__title">Mechanical wireless keyboard</h2>
-          <p class="bottom__description">
-            The Typemaster keyboard boasts top-notch build and practical design. It offers a wide variety
-            of switches and keycaps, along with reliable wireless connectivity.
+        </section>
+      </div>
+    </main>
+    <!-- Feature section -->
+    <section class="feature grid">
+      <div class="card flex flex-col">
+        <div class="card__icon"><img src="./assets/shared/icon-compatible.svg" alt="monitor icon"></div>
+        <div class="card__text">
+          <h3 class="card__title">Highly compatible</h3>
+          <p class="card__description">
+            Easy to use and works well with all major computer brands, gaming consoles and mobile devices.
+            Plug & play, no installation or driver needed.
           </p>
         </div>
-      </section>
-    </div>
-  </main>
-
-  <!-- Feature section -->
-  <section class="feature">
-    <div class="card">
-      <img src="./assets/shared/icon-compatible.svg" alt="" class="card__logo">
-      <h3 class="card__title">Highly compatible</h3>
-      <p class="card__description">
-        Easy to use and works well with all major computer brands, gaming consoles and mobile devices.
-        Plug & play, no installation or driver needed.
-      </p>
-    </div>
-    <div class="card">
-      <img src="./assets/shared/icon-bluetooth.svg" alt="" class="card__logo">
-      <h3 class="card__title">Wireless with bluetooth</h3>
-      <p class="card__description">
-        Powerful 2.4G RF technology allows you to connect the cordless keyboard from up to 30ft away.
-        Simply plug the unifying receiver into your computer.
-      </p>
-    </div>
-    <div class="card">
-      <img src="./assets/shared/icon-battery.svg" alt="" class="card__logo">
-      <h3 class="card__title">High capacity battery</h3>
-      <p class="card__description">
-        Equipped with a long-lasting built-in battery, you’ll never have to spend a dime on replaceable ones.
-        Enjoy 40 hours of usage time between charges.
-      </p>
-    </div>
-    <div class="card">
-      <img src="./assets/shared/icon-light.svg" alt="" class="card__logo">
-      <h3 class="card__title">RGB backlit modes</h3>
-      <p class="card__description">
-        Choose from 4 backlight brightness levels and adjustable breathing speed. Each key glows intensely in the dark and
-        helps
-        you type in low light conditions.
-      </p>
-    </div>
-  </section>
-  <!-- Footer -->
-  <footer class="copyright">Typemaster 2021 | All Rights Reserved</footer>
+      </div>
+      <div class="card flex flex-col">
+        <div class="card__icon"><img src="./assets/shared/icon-bluetooth.svg" alt="bluetooth icon"></div>
+        <div class="card__text">
+          <h3 class="card__title">Wireless with bluetooth</h3>
+          <p class="card__description">
+            Powerful 2.4G RF technology allows you to connect the cordless keyboard from up to 30ft away.
+            Simply plug the unifying receiver into your computer.
+          </p>
+        </div>
+      </div>
+      <div class="card flex flex-col">
+        <div class="card__icon"><img src="./assets/shared/icon-battery.svg" alt="battery icon"></div>
+        <div class="card__text">
+          <h3 class="card__title">High capacity battery</h3>
+          <p class="card__description">
+            Equipped with a long-lasting built-in battery, you’ll never have to spend a dime on replaceable ones.
+            Enjoy 40 hours of usage time between charges.
+          </p>
+        </div>
+      </div>
+      <div class="card flex flex-col">
+        <div class="card__icon"><img src="./assets/shared/icon-light.svg" alt="light bulp icon"></div>
+        <div class="card__text">
+          <h3 class="card__title">RGB backlit modes</h3>
+          <p class="card__description">
+            Choose from 4 backlight brightness levels and adjustable breathing speed. Each key glows intensely in the dark
+            and
+            helps
+            you type in low light conditions.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="copyright">Typemaster 2021 | All Rights Reserved</footer>
+  </div>
 </body>
 
 </html>

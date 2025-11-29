@@ -1,0 +1,16 @@
+// frw'd to main
+@use '../abstracts/' as *;
+
+.nav {
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: map-get($map: $spacing, $key: 500);
+
+  @include respond-to(md) {
+    margin-bottom: map-get($map: $spacing, $key: 600);
+  }
+
+  @include respond-to(lg) {
+    margin-bottom: map-get($map: $spacing, $key: 1000);
+  }
+}

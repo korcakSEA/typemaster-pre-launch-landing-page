@@ -1,0 +1,226 @@
+/* Reset */
+:root {
+  --clr-orange-500: 22, 89%, 52%;
+  --clr-orange-300: 22, 100%, 69%;
+  --clr-neutral-900: 220, 50%, 17%;
+  --clr-neutral-400: 221, 21%, 46%;
+  --clr-neutral-200: 198, 28%, 93%;
+  --clr-neutral-000: #FFFFFF;
+}
+
+/* barlow-500 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../../assets/font/barlow-v13-latin-500.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* barlow-700 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../../assets/font/barlow-v13-latin-700.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* barlow-900 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../../assets/font/barlow-v13-latin-900.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+:root {
+  --font-primary: "Barlow", sans-serif;
+  --fw-black: 900;
+  --fw-bold: 700;
+  --fw-medium: 500;
+  --lh-sm: 100%;
+  --lh-md: 120%;
+  --lh-lg: 150% ;
+}
+
+.card__title {
+  font-size: 1.5rem;
+  font-weight: var(--fw-black);
+  line-height: var(--lh-md);
+}
+
+.copyright, .card__description {
+  font-size: 1rem;
+  font-weight: var(--fw-medium);
+  line-height: var(--lh-lg);
+}
+
+.btn {
+  font-size: 1rem;
+  font-weight: var(--fw-bold);
+  line-height: var(--lh-lg);
+}
+
+*, *::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-primary);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  font: inherit;
+}
+
+.btn {
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  text-transform: uppercase;
+  border: none;
+  transition: all 150ms ease-in;
+}
+@media (min-width: 48rem) {
+  .btn {
+    padding: 1rem 1.5rem;
+  }
+}
+.btn-primary {
+  background-color: hsl(var(--clr-orange-500));
+  color: var(--clr-neutral-000);
+}
+.btn-primary:hover {
+  background-color: hsl(var(--clr-orange-300));
+}
+.btn-primary:focus {
+  outline-offset: 2px;
+  outline: 2px solid hsl(var(--clr-orange-500));
+}
+.btn-secondary {
+  background-color: hsl(var(--clr-neutral-200));
+  color: hsl(var(--clr-neutral-900));
+}
+.btn-secondary:hover {
+  background-color: hsl(var(--clr-neutral-900));
+  color: var(--clr-neutral-000);
+}
+.btn-secondary:focus {
+  outline-offset: 2px;
+  outline: 2px solid hsl(var(--clr-neutral-900));
+}
+
+.card {
+  --gap:2rem;
+}
+@media (min-width: 48rem) {
+  .card {
+    --gap: 3rem;
+  }
+}
+.card__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4.0625rem;
+  height: 4.0625rem;
+  padding: 1.25rem;
+  border-radius: 1rem;
+  background-color: hsl(var(--clr-orange-500));
+}
+.card__text {
+  flex: 1;
+}
+.card__title {
+  color: hsl(var(--clr-neutral-900));
+  text-transform: uppercase;
+  margin-bottom: 1.25rem;
+  width: 15ch;
+}
+@media (min-width: 48rem) {
+  .card__title {
+    margin-bottom: 1.5rem;
+  }
+}
+.card__description {
+  color: hsl(var(--clr-neutral-400));
+}
+
+.wrapper {
+  max-width: 69.75rem;
+  margin-inline: auto;
+  --gap: 4rem;
+  padding-block: 1.5rem;
+  padding-inline: 1rem;
+}
+@media (min-width: 48rem) {
+  .wrapper {
+    --gap: 5rem;
+    padding-block: 2.5rem;
+    padding-inline: 2rem;
+  }
+}
+@media (min-width: 75rem) {
+  .wrapper {
+    --gap: 7.5rem;
+    padding-inline: 0;
+  }
+}
+
+.flex {
+  display: flex;
+  gap: var(--gap, 1rem);
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.grid {
+  display: grid;
+  gap: var(--gap, 1rem);
+  grid-template-columns: repeat(auto-fill, minmax(255px, 1fr));
+}
+
+.nav {
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2.5rem;
+}
+@media (min-width: 48rem) {
+  .nav {
+    margin-bottom: 3rem;
+  }
+}
+@media (min-width: 75rem) {
+  .nav {
+    margin-bottom: 5rem;
+  }
+}
+
+.feature {
+  --gap: 2.5rem;
+}
+@media (min-width: 48rem) {
+  .feature {
+    --gap: 2rem;
+  }
+}
+
+.copyright {
+  text-align: center;
+  color: hsl(var(--clr-neutral-400));
+}

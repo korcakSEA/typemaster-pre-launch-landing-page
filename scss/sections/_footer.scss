@@ -1,0 +1,8 @@
+@use '../abstracts/' as *;
+
+.copyright {
+  text-align: center;
+  color: $secondary;
+  @extend %text-preset-5;
+
+}

@@ -1,0 +1,21 @@
+:root {
+
+  --clr-orange-500: 22, 89%, 52%;
+  --clr-orange-300: 22, 100%, 69%;
+
+  --clr-neutral-900: 220, 50%, 17%;
+  --clr-neutral-400: 221, 21%, 46%;
+  --clr-neutral-200: 198, 28%, 93%;
+
+  --clr-neutral-000: #FFFFFF;
+}
+
+// Colors
+$primary: hsl(var(--clr-orange-500));
+$primary-tint: hsl(var(--clr-orange-300));
+
+$secondary:hsl(var(--clr-neutral-400));
+$secondary-shade:hsl(var(--clr-neutral-900));
+$secondary-tint:hsl(var(--clr-neutral-200));
+
+$white:var(--clr-neutral-000);

@@ -1,0 +1,32 @@
+@use './mixin_func' as *;
+
+$spacing: (
+  25:px-to-rem(2),
+  50:px-to-rem(4),
+  75:px-to-rem(6),
+  100:px-to-rem(8),
+  125:px-to-rem(10),
+  150:px-to-rem(12),
+  175:px-to-rem(14),
+  200:px-to-rem(16),
+  250:px-to-rem(20),
+  300:px-to-rem(24),
+  400:px-to-rem(32),
+  500:px-to-rem(40),
+  600:px-to-rem(48),
+  800:px-to-rem(64),
+  1000:px-to-rem(80),
+  1500:px-to-rem(120)
+);
+
+$radius: (
+  4:px-to-rem(4),
+  6:px-to-rem(6),
+  8:px-to-rem(8),
+  10:px-to-rem(10),
+  12:px-to-rem(12),
+  16:px-to-rem(16),
+  20:px-to-rem(20),
+  24:px-to-rem(24),
+  full:px-to-rem(999),
+);

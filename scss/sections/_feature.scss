@@ -1,0 +1,9 @@
+@use '../abstracts/' as *;
+.feature {
+
+  --gap: #{map-get($map: $spacing, $key: 500)};
+
+  @include respond-to(md) {
+    --gap: #{map-get($map: $spacing, $key: 400)};
+  }
+}

@@ -1,0 +1,76 @@
+/* barlow-500 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../../assets/font/barlow-v13-latin-500.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* barlow-700 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../../assets/font/barlow-v13-latin-700.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* barlow-900 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 900;
+  src: url('../../assets/font/barlow-v13-latin-900.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+@mixin font-style($size, $weight, $lineheight) {
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $lineheight;
+}
+
+:root {
+  // Font Family
+  --font-primary: 'Barlow', sans-serif;
+
+  // Font-weight
+  --fw-black: 900;
+  --fw-bold: 700;
+  --fw-medium: 500;
+  // Line height
+  --lh-sm: 100%;
+  --lh-md: 120%;
+  --lh-lg: 150%
+}
+
+%text-preset-1 {
+  @include font-style(clamp(3rem, 2.82rem + 0.75vw, 3.5rem), var(--fw-black), var(--lh-lg));
+}
+
+%text-preset-2 {
+  @include font-style(2rem, var(--fw-black), var(--lh-md));
+}
+
+%text-preset-3 {
+  @include font-style(1.5rem, var(--fw-black), var(--lh-md));
+}
+
+%text-preset-4 {
+  @include font-style(1.125rem, var(--fw-medium), var(--lh-lg));
+}
+
+%text-preset-5 {
+  @include font-style(1rem, var(--fw-medium), var(--lh-lg));
+}
+
+%text-preset-6 {
+  @include font-style(1rem, var(--fw-bold), var(--lh-lg));
+}
