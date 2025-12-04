@@ -1,6 +1,48 @@
-.grid {
+@use '../abstracts/' as *;
+
+.grid-main {
+  // First and last column size
+  --column-first-last: 8px;
+  // column gap in respective screensize
+  --column-gap: 8px;
+  // nr of column inside middle column, actual content wrapper
+  --mid-column-nr: 3;
+  // Gap number inside mid column
+  --mid-column-gap-nr: calc(var(--mid-column-nr) - 1);
+  // padding left and right, we set the gap outside the content wrapper
+  // calculation: (sizes of first&last colums) * 2 + ( size of gap, which also occurs amoung the first mid(wrapper) last columns) * 2
+  --padding-left-right: calc(var(--column-first-last) * 2 + var(--column-gap) * 2);
+
+  @include respond-to(md) {
+    --column-first-last: 22px;
+    --column-gap: 10px;
+    --mid-column-nr: 12;
+    --mid-column-gap-nr: calc(var(--mid-column-nr) - 1);
+    --padding-left-right: 64px;
+    align-items: center;
+  }
+
+  @include respond-to(lg) {
+    --column-first-last: 1fr;
+    --column-gap: 30px;
+    --mid-column-nr: 12;
+    --mid-column-gap-nr: calc(var(--mid-column-nr) - 1);
+  }
+
+  display: grid;
+  column-gap: var(--column-gap);
+  grid-template-columns: 
+  var(--column-first-last)
+
+  repeat(var(--mid-column-nr), calc((min(100% - var(--padding-left-right), 69.375rem) - (var(--mid-column-gap-nr) * var(--column-gap))) / var(--mid-column-nr)))
+
+  var(--column-first-last);
+
+
+}
+
+.grid-feature {
   display: grid;
   gap: var(--gap, 1rem);
   grid-template-columns: repeat(auto-fill, minmax(255px, 1fr));
-  
 }

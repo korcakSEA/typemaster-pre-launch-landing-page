@@ -2,15 +2,26 @@
 @use '../abstracts/' as *;
 
 .nav {
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: map-get($map: $spacing, $key: 500);
+
+  grid-column: 2/-2;
+
+  /*   --width-padding-left-right: 32px;
 
   @include respond-to(md) {
-    margin-bottom: map-get($map: $spacing, $key: 600);
+    --width-padding-left-right: 64px;
+  }
+
+  width: min(100% - var(--width-padding-left-right), 69.375rem);
+  margin-inline: auto; */
+  justify-content: space-between;
+  align-items: center;
+  margin-block: map-get($map: $spacing, $key: 300) map-get($map: $spacing, $key: 500);
+
+  @include respond-to(md) {
+    margin-block: map-get($map: $spacing, $key: 500) map-get($map: $spacing, $key: 600);
   }
 
   @include respond-to(lg) {
-    margin-bottom: map-get($map: $spacing, $key: 1000);
+    margin-block: map-get($map: $spacing, $key: 500) map-get($map: $spacing, $key: 1000);
   }
 }

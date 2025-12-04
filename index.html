@@ -12,45 +12,46 @@
 </head>
 
 <body>
-  <div class="wrapper flex flex-col">
-    
-    <main class="container">
-      <!-- Navigation -->
+
+  <main class="">
+    <!-- Navigation -->
+    <div class="grid-main">
       <nav class="nav flex">
         <img src="./assets/shared/logo.svg" alt="Typemaster logo" class="nav__logo">
         <button type="submit" class="nav__cta btn btn-secondary">Pre-order now</button>
       </nav>
-      <!-- Main Hero -->
-      <div class="hero">
-        <!-- Hero Top section -->
-        <section class="top flex">
-          <!-- Top Content -->
-          <div class="top__content">
-            <!-- Top Text -->
-            <div class="top__text">
-              <h1 class="top__title">Typemaster keyboard</h1>
-              <p class="top__description">
-                Improve your productivity and gaming without breaking the bank. Upgrade to a high quality
-                mechanical typing experience.
-              </p>
-            </div>
-            <!-- Top CTA -->
-            <div class="top__cta">
-              <button type="submit" class="btn btn-primary">Pre-order now</button>
-              <span>Release on 5/27</span>
-            </div>
+    </div>
+    <!-- Main Hero -->
+    <div class="hero">
+      <!-- Hero Top section -->
+      <section class="top grid-main">
+        <!-- Top Content -->
+        <div class="top__content ">
+          <!-- Top Text -->
+          <div class="top__text">
+            <h1 class="top__title">Typemaster keyboard</h1>
+            <p class="top__description">
+              Improve your productivity and gaming without breaking the bank. Upgrade to a high quality
+              mechanical typing experience.
+            </p>
           </div>
-          <!-- Picture, will be in a div? -->
-          <picture>
-            <source media="(min-width:1024px)" srcset="./assets/desktop/image-keyboard.jpg">
-            <source media="(min-width:768px )" srcset="./assets/tablet/image-keyboard.jpg">
-            <img src="./assets/mobile/image-keyboard.jpg" alt="keyboard image">
-          </picture>
-        </section>
-        <!-- Hero Bottom section -->
-        <section class="bottom flex">
-          <!-- Bottom Image container -->
-          <div class="bottom__images flex">
+          <!-- Top CTA -->
+          <div class="top__cta">
+            <button type="submit" class="btn btn-primary">Pre-order now</button>
+            <span>Release on 5/27</span>
+          </div>
+        </div>
+        <!-- Picture, will be in a div? -->
+        <picture class="top__image-container">
+          <source media="(min-width:1024px)" srcset="./assets/desktop/image-keyboard.jpg">
+          <source media="(min-width:700px )" srcset="./assets/tablet/image-keyboard.jpg">
+          <img src="./assets/mobile/image-keyboard.jpg" alt="keyboard image" class="top__image">
+        </picture>
+      </section>
+      <!-- Hero Bottom section -->
+      <section class="bottom">
+        <!-- Bottom Image container -->
+        <!-- <div class="bottom__images">
             <picture class="bottom__images-left">
               <source media="(min-width:1024px)" srcset="./assets/desktop/image-phone-and-keyboard.jpg">
               <source media="(min-width:768px )" srcset="./assets/tablet/image-phone-and-keyboard.jpg">
@@ -61,20 +62,20 @@
               <source media="(min-width:768px )" srcset="./assets/tablet/image-glass-and-keyboard.jpg">
               <img src="./assets/mobile/image-glass-and-keyboard.jpg" alt="keyboard image">
             </picture>
-          </div>
-          <!-- Bottom content -->
-          <div class="bottom__content">
+          </div> -->
+        <!-- Bottom content -->
+        <!-- <div class="bottom__content">
             <h2 class="bottom__title">Mechanical wireless keyboard</h2>
             <p class="bottom__description">
               The Typemaster keyboard boasts top-notch build and practical design. It offers a wide variety
               of switches and keycaps, along with reliable wireless connectivity.
             </p>
-          </div>
-        </section>
-      </div>
-    </main>
-    <!-- Feature section -->
-    <section class="feature grid">
+          </div> -->
+      </section>
+    </div>
+  </main>
+  <!-- Feature section -->
+  <!-- <section class="feature grid-feature">
       <div class="card flex flex-col">
         <div class="card__icon"><img src="./assets/shared/icon-compatible.svg" alt="monitor icon"></div>
         <div class="card__text">
@@ -117,10 +118,11 @@
           </p>
         </div>
       </div>
-    </section>
-    <!-- Footer -->
-    <footer class="copyright">Typemaster 2021 | All Rights Reserved</footer>
-  </div>
+    </section> -->
+ 
+  <!-- Footer -->
+  <!-- <footer class="copyright">Typemaster 2021 | All Rights Reserved</footer> -->
+
 </body>
 
 </html>
