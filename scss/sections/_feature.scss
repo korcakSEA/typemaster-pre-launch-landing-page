@@ -1,9 +1,7 @@
 @use '../abstracts/' as *;
+
 .feature {
 
-  --gap: #{map-get($map: $spacing, $key: 500)};
+  grid-column: 2/-2;
 
-  @include respond-to(md) {
-    --gap: #{map-get($map: $spacing, $key: 400)};
-  }
 }

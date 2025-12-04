@@ -2,17 +2,7 @@
 @use '../abstracts/' as *;
 
 .bottom {
-
-  &__images {
-    // grid position
-    grid-column: 1/-2;
-    // flex gap for images
-    --gap: #{map-get($map: $spacing, $key: 300)};
-
-    margin-bottom: map-get($map: $spacing, $key: 800);
-    margin-left: -1rem;
-  }
-
+  // Every image takes its own position
   &__left-image-container,
   &__right-image-container {
     border-radius: map-get($map: $radius, $key: 20);
@@ -78,11 +68,14 @@
     @include respond-to(lg) {
       grid-column: 11 / 14;
     }
-
     margin-top: map-get($map: $spacing, $key: 800);
 
     --gap:#{map-get($map: $spacing, $key: 300)};
-    flex-wrap: wrap
+    @include respond-to(md) {
+      --gap:#{map-get($map: $spacing, $key: 800)};
+
+    }
+    flex-wrap: wrap;
   }
 
   &__title {

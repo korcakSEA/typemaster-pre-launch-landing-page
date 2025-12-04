@@ -5,4 +5,10 @@
   color: $secondary;
   @extend %text-preset-5;
 
+  margin-bottom: map-get($map: $spacing, $key: 300);
+
+  @include respond-to(md) {
+    margin-bottom: map-get($map: $spacing, $key: 500);
+
+  }
 }

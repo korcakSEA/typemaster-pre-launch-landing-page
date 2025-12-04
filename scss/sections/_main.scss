@@ -1,3 +1,20 @@
+@use '../abstracts/' as *;
+
 @forward './nav';
 @forward './topSection';
 @forward './bottomSection';
+
+.main,
+.feature {
+  margin-bottom: map-get($map: $spacing, $key: 800);
+
+  @include respond-to(md) {
+    margin-bottom: map-get($map: $spacing, $key: 1000);
+
+  }
+
+  @include respond-to(lg) {
+    margin-bottom: map-get($map: $spacing, $key: 1500);
+
+  }
+}
