@@ -11,10 +11,8 @@ This is a solution to the [Typemaster pre-launch landing page challenge on Front
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 
 ## Overview
@@ -28,7 +26,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](![alt text](image.png))
 
 
 
@@ -46,37 +44,15 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
+- [SASS/SCSS] - CSS Preprocessor
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-
-```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
-};
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+I learned how to implement a Full Bleed layout in our projects. I really liked the Full Bleed pattern and will use it going forward. For more information, you can click the link below:
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
+- [How to make full bleed wrappers with CSS grid](https://www.youtube.com/watch?v=6l24PIccgqU&t=36s) - This video provides a very educational explanation of wrappers, which we use in almost every web design project.
 
 
 
@@ -84,9 +60,5 @@ If you want more help with writing markdown, we'd recommend checking out [The Ma
 
 - Website - (https://korcaksea.github.io/myPortfolio/)
 - Frontend Mentor - [@korcakSEA](https://www.frontendmentor.io/profile/korcakSEA)
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
 
 

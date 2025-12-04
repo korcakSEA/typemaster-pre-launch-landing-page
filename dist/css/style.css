@@ -396,7 +396,7 @@ button {
   grid-column: 2/-2;
   margin-top: 4rem;
   --gap:1.5rem;
-  flex-wrap: wrap;
+  flex-direction: column;
 }
 @media (min-width: 75rem) {
   .bottom__content {
@@ -406,6 +406,16 @@ button {
 @media (min-width: 43.75rem) {
   .bottom__content {
     --gap:4rem;
+  }
+}
+@media (min-width: 43.75rem) {
+  .bottom__content {
+    flex-direction: row;
+  }
+}
+@media (min-width: 75rem) {
+  .bottom__content {
+    flex-direction: column;
   }
 }
 .bottom__title {

@@ -2,6 +2,7 @@
 @use '../abstracts/' as *;
 
 .bottom {
+
   // Every image takes its own position
   &__left-image-container,
   &__right-image-container {
@@ -62,20 +63,33 @@
     mix-blend-mode: multiply;
   }
 
+  // Text Section
+
   &__content {
     grid-column: 2/-2;
 
     @include respond-to(lg) {
       grid-column: 11 / 14;
     }
+
     margin-top: map-get($map: $spacing, $key: 800);
 
     --gap:#{map-get($map: $spacing, $key: 300)};
+
     @include respond-to(md) {
       --gap:#{map-get($map: $spacing, $key: 800)};
 
     }
-    flex-wrap: wrap;
+
+    flex-direction: column;
+
+    @include respond-to(md) {
+      flex-direction: row
+    }
+
+    @include respond-to(lg) {
+      flex-direction: column
+    }
   }
 
   &__title {
