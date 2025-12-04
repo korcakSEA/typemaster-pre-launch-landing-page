@@ -213,7 +213,13 @@ button {
 .grid-feature {
   display: grid;
   gap: var(--gap, 1rem);
-  grid-template-columns: repeat(auto-fill, minmax(255px, 1fr));
+  --gap:2.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(253px, 1fr));
+}
+@media (min-width: 43.75rem) {
+  .grid-feature {
+    --gap:2rem;
+  }
 }
 
 .nav {

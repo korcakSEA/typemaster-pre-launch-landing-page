@@ -31,12 +31,7 @@
 
   display: grid;
   column-gap: var(--column-gap);
-  grid-template-columns: 
-  var(--column-first-last)
-
-  repeat(var(--mid-column-nr), calc((min(100% - var(--padding-left-right), 69.375rem) - (var(--mid-column-gap-nr) * var(--column-gap))) / var(--mid-column-nr)))
-
-  var(--column-first-last);
+  grid-template-columns: var(--column-first-last) repeat(var(--mid-column-nr), calc((min(100% - var(--padding-left-right), 69.375rem) - (var(--mid-column-gap-nr) * var(--column-gap))) / var(--mid-column-nr))) var(--column-first-last);
 
 
 }
@@ -44,5 +39,10 @@
 .grid-feature {
   display: grid;
   gap: var(--gap, 1rem);
-  grid-template-columns: repeat(auto-fill, minmax(255px, 1fr));
+  --gap:#{map-get($map: $spacing, $key: 500)};
+  grid-template-columns: repeat(auto-fill, minmax(253px, 1fr));
+
+  @include respond-to(md) {
+    --gap:#{map-get($map: $spacing, $key: 400)};
+  }
 }
