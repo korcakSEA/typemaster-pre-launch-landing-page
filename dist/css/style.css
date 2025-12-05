@@ -334,6 +334,15 @@ button {
     height: 30rem;
   }
 }
+.top__square {
+  align-self: baseline;
+  height: 15rem;
+  border-radius: 20px 0 0 20px;
+  overflow: hidden;
+}
+.top__square img {
+  height: 100%;
+}
 
 .bottom__left-image-container, .bottom__right-image-container {
   border-radius: 1.25rem;
@@ -426,6 +435,16 @@ button {
 .bottom__description {
   max-width: 24.875rem;
   color: hsl(var(--clr-neutral-400));
+}
+.bottom__square {
+  align-self: end;
+  justify-self: end;
+  height: 15rem;
+  border-radius: 0 20px 20px 0;
+  overflow: hidden;
+}
+.bottom__square img {
+  height: 100%;
 }
 
 .main,

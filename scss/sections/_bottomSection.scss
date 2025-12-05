@@ -104,4 +104,17 @@
     @extend %text-preset-5;
     color: $secondary;
   }
+
+  // Square
+  &__square {
+    align-self: end;
+    justify-self: end;
+    height: px-to-rem(240);
+    border-radius: 0 20px 20px 0;
+    overflow: hidden;
+    
+    img {
+      height: 100%;
+    }
+  }
 }
